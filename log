@@ -97,3 +97,17 @@ Thu 09 May 2024 10:14:39 PM UTC:
  tests:  13|5
 total_score: 25/70
 93cb52c
+Thu 09 May 2024 10:16:25 PM UTC: 
+ treemap.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:125:15: error: variable ‘parent’ set but not used [-Werror=unused-but-set-variable]
+  125 |     TreeNode *parent = NULL;
+      |               ^~~~~~
+treemap.c:136:1: error: control reaches end of non-void function [-Werror=return-type]
+  136 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c32a845
