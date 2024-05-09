@@ -2,3 +2,15 @@ Thu 09 May 2024 09:17:12 PM UTC:
  tests:  1|8
 total_score: 0/70
 98a44d4
+Thu 09 May 2024 09:38:45 PM UTC: 
+ treemap.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:4:
+treemap.c:51:5: error: expected identifier or ‘(’ before ‘return’
+   51 |     return NULL;
+      |     ^~~~~~
+treemap.c:52:1: error: expected identifier or ‘(’ before ‘}’ token
+   52 | }
+      | ^
+Compilation failed
+9d38911
