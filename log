@@ -45,3 +45,18 @@ treemap.c:63:13: error: expected expression before ‘}’ token
       |             ^
 Compilation failed
 bf958a8
+Thu 09 May 2024 09:55:29 PM UTC: 
+ treemap.c | 16 +++++++++++++---
+ 1 file changed, 13 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:57:15: error: unused variable ‘parent’ [-Werror=unused-variable]
+   57 |     TreeNode *parent = NULL;
+      |               ^~~~~~
+treemap.c: At top level:
+treemap.c:76:1: error: expected identifier or ‘(’ before ‘}’ token
+   76 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d90d276
