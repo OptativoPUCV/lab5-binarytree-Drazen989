@@ -132,7 +132,9 @@ Pair * upperBound(TreeMap * tree, void* key) {
             aux = aux->right;
         }
     }
-    if (parent == NULL) return NULL;
+    if (aux == NULL) return NULL;
+    tree->current = parent;
+    return parent->pair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
