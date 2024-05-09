@@ -128,9 +128,10 @@ Pair * upperBound(TreeMap * tree, void* key) {
             parent = aux;
             aux = aux->left;
         }
-        else{
+        else if (tree->lower_than(aux->pair->key , key))
             aux = aux->right;
-        }
+
+        else break;
     }
     if (aux == NULL) return NULL;
     tree->current = parent;
@@ -138,6 +139,9 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
+    TreeNode *aux = tree->root;
+
+    
     return NULL;
 }
 
