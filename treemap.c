@@ -201,6 +201,7 @@ Pair * firstTreeMap(TreeMap * tree) {
     TreeNode *aux = tree->root;
     while (aux->left != NULL){
         aux = aux->left;
+        if(aux == NULL) return NULL;
     }
     if(aux == NULL) return NULL;
     tree->current = aux;
