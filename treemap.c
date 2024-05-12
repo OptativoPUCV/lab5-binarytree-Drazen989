@@ -215,13 +215,13 @@ Pair * nextTreeMap(TreeMap * tree) {
             aux = aux->left;
         }
         tree->current = aux;
+        return aux->pair;
     }
     else{
         TreeNode *aux2 = aux->parent;
         while (aux2 != NULL && aux == aux2->right){
             aux = aux2;
             aux2 = aux->parent;
-            if (aux2 == NULL) break;
         }
         tree->current = aux2;
     }
