@@ -192,3 +192,9 @@ treemap.c:103:5: error: expected expression before ‘}’ token
       |     ^
 Compilation failed
 55b2713
+Sun 12 May 2024 05:25:00 AM UTC: 
+ treemap.c | 46 +++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 45 insertions(+), 1 deletion(-)
+ tests:  17|4
+total_score: 40/70
+e4184ce
