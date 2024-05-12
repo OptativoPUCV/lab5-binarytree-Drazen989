@@ -132,8 +132,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
                     }
                 }
             }
-            //else{
-            /*
+            else{
                 TreeNode *aux = node->right;
                 while (aux->left != NULL){
                     aux = aux->left;
@@ -141,11 +140,13 @@ void removeNode(TreeMap * tree, TreeNode* node) {
                 node->pair->key = aux->pair->key;
                 node->pair->value = aux->pair->value;
                 removeNode(tree, aux);
-            //}
-            */
+            }
         }
     }
-
+    free(node->pair->key);
+    free(node->pair->value);
+    free(node->pair);
+    free(node);
 }
 
 void eraseTreeMap(TreeMap * tree, void* key){
