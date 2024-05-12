@@ -226,5 +226,4 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current = aux2;
         return aux2->pair;
     }
-    return aux->pair;
 }
