@@ -190,7 +190,6 @@ Pair * upperBound(TreeMap * tree, void* key) {
         else{
             aux = aux->right;
         }
-        
     }
     if (ub == NULL) return NULL;
     tree->current = ub;
@@ -224,7 +223,7 @@ Pair * nextTreeMap(TreeMap * tree) {
             aux2 = aux->parent;
             if (aux2 == NULL) break;
         }
-        //tree->current = aux2;
+        tree->current = aux2;
     }
     return aux->pair;
 }
