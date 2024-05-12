@@ -185,10 +185,12 @@ Pair * upperBound(TreeMap * tree, void* key) {
         if (tree->lower_than(key, aux->pair->key)){
             ub = aux;
             aux = aux->left;
+            
         }
         
         else{
             aux = aux->right;
+            
         }
     }
     if (ub == NULL) return NULL;
@@ -216,6 +218,14 @@ Pair * nextTreeMap(TreeMap * tree) {
         }
         tree->current = aux;
     }
-    
-    return NULL;
+    else{
+        TreeNode *aux2 = aux->parent;
+        while (aux2 != NULL && aux == aux2->right){
+            aux = aux2;
+            aux2 = aux->parent;
+            if (aux2 == NULL) break;
+        }
+        //tree->current = aux2;
+    }
+    return aux->pair;
 }
