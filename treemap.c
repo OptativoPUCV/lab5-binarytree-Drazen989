@@ -191,10 +191,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
             aux = aux->right;
             if (aux == NULL) break;
         }
-    }
+    }/*
     if (aux == NULL) return NULL;
     tree->current = aux;
     return aux->pair;
+    */
     if (ub == NULL) return NULL;
     tree->current = ub;
     return ub->pair;
